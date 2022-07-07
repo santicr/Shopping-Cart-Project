@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from 'react'
+import Celular from './components/Celular'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    state = {
+        celulares: [
+            {nombre: 'Samsung Galaxy S10', precio: '2000000 de pesos', img: '/img/galaxyS10'},
+            {nombre: 'Samsung Galaxy S20', precio: '4500000 de pesos', img: '/img/galaxyS10'},
+            {nombre: 'Samsung Galaxy S30', precio: '6000000 de pesos', img: '/img/galaxyS10'},
+            {nombre: 'iPhone 13', precio: '6000000 de pesos', img: '/img/galaxyS10'},
+            {nombre: 'iPhone 12', precio: '4000000 de pesos', img: '/img/galaxyS10'},
+            {nombre: 'iPhone 11', precio: '3000000 de pesos', img: '/img/galaxyS10'},
+        ]
+    }
+    render() {
+        return(
+            <div>
+                
+            </div>
+        )
+    }
 }
 
 export default App;
